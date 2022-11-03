@@ -117,7 +117,7 @@ function createCustomer(name: string, age?: number, city?: string) {
     console.log(city);
   }
 }
-
+createCustomer("ggg")
 function checkoutWorkers(customer: string, ...workerIDs: number[]) {
   console.log(customer);
 
@@ -131,7 +131,11 @@ function checkoutWorkers(customer: string, ...workerIDs: number[]) {
 let myWorkers = checkoutWorkers("Ann", 1, 2, 4);
 myWorkers.forEach((worker) => console.log(worker));
 
+console.log("-----------\n")
 logFirstAvilable(getAllworkers());
-getWorkersNamesByCategory(Category.QA);
-logWorkersNames(getWorkersNamesByCategory(Category.Developer));
+console.log("-----------\n")
+getWorkersNamesByCategory(Category.Designer);
+console.log("-----------\n")
+logWorkersNames(getWorkersNamesByCategory(Category.Designer));
+console.log("-----------\n")
 console.log(getWorkerByID(0));
