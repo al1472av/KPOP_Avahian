@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Обраний користувач</h1>
+<div mat-dialog-content>
+    <ul><p>{{this.user.name}}</p>
+        <li>{{this.user.email}}</li>
+        <li>{{this.user.login}}</li>
+        <li>{{this.user.password}}</li>
+        <li>{{this.user.cell}}</li>
+    </ul>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="Cancel()">No Thanks</button>
+    <mat-icon class = "favourite_icon" (click)="addFavourite()">favorite</mat-icon>
+</div>
